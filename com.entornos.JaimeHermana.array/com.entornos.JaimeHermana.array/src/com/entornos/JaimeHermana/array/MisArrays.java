@@ -35,4 +35,18 @@ public abstract class MisArrays {
 		}
 		return mediana;
 	}
+	/**
+	 * Recibe un array de números enteros y devuelve el valor máximo de dicho array.
+	 * @param Recibe un array de números enteros
+	 * @return devuelve el valor máximo de dicho array.
+	 */
+	public static double Maximo(int array[]) {
+		int mayor = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > mayor) {
+                mayor = array[i];
+            }
+        }
+        return mayor;
+	}
 }
