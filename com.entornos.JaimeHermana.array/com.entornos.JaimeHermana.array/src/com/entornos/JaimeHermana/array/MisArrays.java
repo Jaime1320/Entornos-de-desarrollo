@@ -49,4 +49,19 @@ public abstract class MisArrays {
         }
         return mayor;
 	}
+	/**
+	 * Recibe un array de números enteros y devuelve el valor minimo de dicho array.
+	 * @param Recibe un array de números enteros
+	 * @return devuelve el valor minimo de dicho array.
+	 */
+	public static double Minimo(int array[]) {
+		int menor = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] < menor) {
+                menor = array[i];
+            }
+        }
+        return menor;
+	}
+	
 }
